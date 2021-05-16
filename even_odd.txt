@@ -1,0 +1,11 @@
+read -p "enter any string: " num
+
+if [ ` expr  $num % 2 ` == 0 ]
+then
+        echo "even_num"
+
+else
+
+        echo "odd_num"
+
+fi

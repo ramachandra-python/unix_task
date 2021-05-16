@@ -1,0 +1,19 @@
+read -p "enter basic salary of persionv : " basic_salary
+
+
+ta=`expr 15 \* $basic_salary / 100`
+
+da=`expr 2 \* $basic_salary / 100`
+
+hra=`expr 10 \* $basic_salary / 100`
+
+salary=`expr $basic_salary + $ta + $da + $hra`
+
+incom_tax=`expr 5 \* $salary / 100`
+
+providend_fund=`expr 10 \* $salary / 100`
+
+salary=`expr $salary - $incom_tax - $providend_fund`
+
+
+echo "the final salary of person is : $salary"

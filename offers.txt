@@ -1,0 +1,16 @@
+read -p "enter bill of the persion : " bill
+
+if [ $bill -lt 1000 ]
+then
+     tax=`expr $bill \* 2 / 100`
+     discount=`expr $bill \* 10 / 100`
+     bill=`expr $bill + $tax - $discount`
+else
+     tax=`expr $bill \* 5 / 100`
+     discount=`expr $bill \* 20 / 100`
+     bill=`expr $bill + $tax - $discount`
+
+
+fi
+
+echo "final bill after tax and discount is : $bill"

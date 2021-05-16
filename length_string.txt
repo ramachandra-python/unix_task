@@ -1,0 +1,2 @@
+read -p "enter any string : " st
+echo ${#st}
